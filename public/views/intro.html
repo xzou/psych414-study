@@ -1,0 +1,9 @@
+{{hello}}
+<h1>Welcome</h1>
+<p>Thank you very much for signing up for this study. <br/>
+Please enter your Amazon Mechanical Turk Worker ID below.</p>
+<form novalidate>
+    Worker ID: <input type="text" placeholder="Worker ID" ng-model="ID" />
+    {{ID}}
+    <button ng-click="go('/consent')">>></button>
+</form>
