@@ -1,5 +1,7 @@
 <ul class="trials">
-    <li ng-repeat="excerpt in excerpts">
+<!--    <li ng-repeat="excerpt in excerpts">
+        <span ng-bind-html="excerpt.label | trustHTML"></span>
+        <span ng-bind-html="excerpt.excerpt | trustHTML"></span> -->
         <span ng-bind-html="excerpt.label | trustHTML"></span>
         <span ng-bind-html="excerpt.excerpt | trustHTML"></span>
         <div>
@@ -7,7 +9,7 @@
             and/or examine how the author employs literary techniques to create an effect.</p>
         <div>
         <div>
-            <textarea ng-model="string"></textarea>
+            <textarea ng-model="analysis1"></textarea>
         </div>
 
         <div class="wrap">
@@ -16,31 +18,32 @@
                     the quality of this excerpt?</label>
                     <ul class='likert'>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert" value="1" ng-model="ratings1A">
                             <label>1 Very bad</label>
+                            {{ratings1A}}
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert" value="2" ng-model="ratings1A">
                             <label>2 Bad</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert" value="3" ng-model="ratings1A">
                             <label>3 Somewhat bad</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert" value="4" ng-model="ratings1A">
                             <label>4 Neither good nor bad</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert" value="5" ng-model="ratings1A">
                             <label>5 Somewhat good</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert" value="6" ng-model="ratings1A">
                             <label>6 Good</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert" value="7" ng-model="ratings1A">
                             <label>7 Very good</label>
                         </li>
                     </ul>
@@ -50,31 +53,32 @@
                     this excerpt?</label>
                     <ul class='likert'>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert" value="1" ng-model="ratings1B">
                             <label>1 Dislike very much</label>
+                            {{ratings1B}}
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert" value="2" ng-model="ratings1B">
                             <label>2 Dislike</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert" value="3" ng-model="ratings1B">
                             <label>3 Somewhat dislike</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert" value="4" ng-model="ratings1B">
                             <label>4 Neither like nor dislike</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert" value="5" ng-model="ratings1B">
                             <label>5 Somewhat like</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert" value="6" ng-model="ratings1B">
                             <label>6 Like</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert" value="7" ng-model="ratings1B">
                             <label>7 Like very much</label>
                         </li>
                     </ul>
@@ -84,31 +88,32 @@
                     this excerpt is?</label>
                     <ul class='likert'>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert" value="1" ng-model="ratings1C">
                             <label>1 Very uncreative</label>
+                            {{ratings1C}}
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert" value="2" ng-model="ratings1C">
                             <label>2 Uncreative</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert" value="3" ng-model="ratings1C">
                             <label>3 Somewhat uncreative</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert" value="4" ng-model="ratings1C">
                             <label>4 Neither creative nor uncreative</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert" value="5" ng-model="ratings1C">
                             <label>5 Somewhat creative</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert" value="6" ng-model="ratings1C">
                             <label>6 Creative</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert" value="7" ng-model="ratings1C">
                             <label>7 Very creative</label>
                         </li>
                     </ul>
@@ -118,31 +123,32 @@
                     this excerpt?</label>
                     <ul class='likert'>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert" value="1" ng-model="ratings1D">
                             <label>1 Not moving at all</label>
+                            {{ratings1D}}
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert" value="2" ng-model="ratings1D">
                             <label>2</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert" value="3" ng-model="ratings1D">
                             <label>3</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert" value="4" ng-model="ratings1D">
                             <label>4 Somewhat moving</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert" value="5" ng-model="ratings1D">
                             <label>5</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert" value="6" ng-model="ratings1D">
                             <label>6</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert" value="7" ng-model="ratings1D">
                             <label>7 Very moving</label>
                         </li>
                     </ul>
@@ -152,31 +158,32 @@
                     is this excerpt?</label>
                     <ul class='likert'>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert" value="1" ng-model="ratings1E">
                             <label>1 very poorly written</label>
+                            {{ratings1E}}
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert" value="2" ng-model="ratings1E">
                             <label>2 poorly written</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert" value="3" ng-model="ratings1E">
                             <label>3 somewhat poorly written</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert" value="4" ng-model="ratings1E">
                             <label>4 neither poorly written nor well-written</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert" value="5" ng-model="ratings1E">
                             <label>5 somewhat well-written</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert" value="6" ng-model="ratings1E">
                             <label>6 well-written</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert" value="7" ng-model="ratings1E">
                             <label>7 very well-written</label>
                         </li>
                     </ul>
@@ -186,31 +193,32 @@
                     is this excerpt?</label>
                     <ul class='likert'>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert" value="1" ng-model="ratings1F">
                             <label>1 Very shallow</label>
+                            {{ratings1F}}
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert" value="2" ng-model="ratings1F">
                             <label>2 Shallow</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert" value="3" ng-model="ratings1F">
                             <label>3 Somewhat shallow</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert" value="4" ng-model="ratings1F">
                             <label>4 Neither shallow nor profound</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert" value="5" ng-model="ratings1F">
                             <label>5 Somewhat profound</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert" value="6" ng-model="ratings1F">
                             <label>6 Profound</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert" value="7" ng-model="ratings1F">
                             <label>7 Very profound</label>
                         </li>
                     </ul>
@@ -220,31 +228,32 @@
                     recommend the author of this excerpt to a friend?</label>
                     <ul class='likert'>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert" value="1" ng-model="ratings1G">
                             <label>1 Not at all recommend</label>
+                            {{ratings1G}}
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert" value="2" ng-model="ratings1G">
                             <label>2</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert" value="3" ng-model="ratings1G">
                             <label>3</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert" value="4" ng-model="ratings1G">
                             <label>4 Somewhat recommend</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert" value="5" ng-model="ratings1G">
                             <label>5</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert" value="6" ng-model="ratings1G">
                             <label>6</label>
                         </li>
                         <li>
-                            <input type="radio" name="likert" value="strong_agree">
+                            <input type="radio" name="likert" value="7" ng-model="ratings1G">
                             <label>7 Very much recommend</label>
                         </li>
                     </ul>

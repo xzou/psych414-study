@@ -114,11 +114,6 @@ module.exports = function(app) {
         });
     });
 
-
-
-
-
-
     // FRONTEND ROUTES
     // ===========================================================
     app.get('*', function(req, res) {

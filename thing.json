@@ -1,14 +1,121 @@
 [
     {
-        "_id" : "ObjectId(000000000000000000000001)",
+        "_id" : ObjectId("000000000000000000000001"),
         "label" : "Excerpt from a poem by a prominent 20th century poet:<br/><br/>",
         "excerpt" : "She gazes through dull blue pupils<br/>Set in the whites of her eyes<br/>She closes them, and the key<br/>Turns by itself<br/><br/>She opens her eyes, and they're blank<br/>Like a statue's in a museum<br/>Her machine begins to move, the key turns<br/>Again, her eyes change, she sings"
     }, 
 
     {
-        "_id" : "ObjectId(000000000000000000000002)",
+        "_id" : ObjectId("000000000000000000000002"),
         "label" : "Excerpt from a poem by a prominent 20th century poet:<br/><br/>",
         "excerpt" : "I speak of love that comes to mind<br/>The moon is faithful, although blind<br/>She moves in thought she cannot speak<br/>Perfect care has made her bleak<br/><br/>I never dreamed the sea so deep,<br/>The earth so dark; so long my sleep,<br/>I have become another child<br/>I wake to see the world go wild"
-    }
+    }, 
 
+    {
+        "_id" : ObjectId("000000000000000000000003"),
+        "label" : "Excerpt from a poem by a prominent 20th century poet:<br/><br/>",
+        "excerpt" : "You’ll bare your bones you’ll grow you’ll pray you’ll only know<br/>When the light appears, boy, when the light appears<br/>You’ll sing & you’ll love you’ll praise blue heavens above<br/>When the light appears, boy, when the light appears<br/>You’ll whimper & you’ll cry you’ll get yourself sick and sigh<br/>You’ll sleep & you’ll dream you’ll only know what you mean"
+    },
+
+    {
+        "_id" : ObjectId("000000000000000000000004"),
+        "label" : "Excerpt from a poem by a prominent 20th century poet:<br/><br/>",
+        "excerpt" : "Every shadow has a name<br/>When I think of mine I moan<br/>I hear rumors of such fame<br/>Not for pride, but only shame,<br/>Shadow changes into bone"
+    },
+
+    {
+        "_id" : ObjectId("000000000000000000000005"),
+        "label" : "Excerpt from a poem by a prominent 20th century poet:<br/><br/>",
+        "excerpt" : "When I died, love, when I died<br/>There was a war in the upper air<br/>All that happens, happens there<br/>There was an angel by my side<br/>When I died, love, when I died"
+    },
+
+    {
+        "_id" : ObjectId("000000000000000000000006"),
+        "label" : "Excerpt from a song by a popular 21st century young pop star:<br/><br/>",
+        "excerpt" : "She gazes through dull blue pupils<br/>Set in the whites of her eyes<br/>She closes them, and the key<br/>Turns by itself<br/><br/>She opens her eyes, and they're blank<br/>Like a statue's in a museum<br/>Her machine begins to move, the key turns<br/>Again, her eyes change, she sings"
+    }, 
+
+    {
+        "_id" : ObjectId("000000000000000000000007"),
+        "label" : "Excerpt from a song by a popular 21st century young pop star:<br/><br/>",
+        "excerpt" : "I speak of love that comes to mind<br/>The moon is faithful, although blind<br/>She moves in thought she cannot speak<br/>Perfect care has made her bleak<br/><br/>I never dreamed the sea so deep,<br/>The earth so dark; so long my sleep,<br/>I have become another child<br/>I wake to see the world go wild"
+    }, 
+
+    {
+        "_id" : ObjectId("000000000000000000000008"),
+        "label" : "Excerpt from a song by a popular 21st century young pop star:<br/><br/>",
+        "excerpt" : "You’ll bare your bones you’ll grow you’ll pray you’ll only know<br/>When the light appears, boy, when the light appears<br/>You’ll sing & you’ll love you’ll praise blue heavens above<br/>When the light appears, boy, when the light appears<br/>You’ll whimper & you’ll cry you’ll get yourself sick and sigh<br/>You’ll sleep & you’ll dream you’ll only know what you mean"
+    },
+
+    {
+        "_id" : ObjectId("000000000000000000000009"),
+        "label" : "Excerpt from a song by a popular 21st century young pop star:<br/><br/>",
+        "excerpt" : "Every shadow has a name<br/>When I think of mine I moan<br/>I hear rumors of such fame<br/>Not for pride, but only shame,<br/>Shadow changes into bone"
+    },
+
+    {
+        "_id" : ObjectId("000000000000000000000010"),
+        "label" : "Excerpt from a song by a popular 21st century young pop star:<br/><br/>",
+        "excerpt" : "When I died, love, when I died<br/>There was a war in the upper air<br/>All that happens, happens there<br/>There was an angel by my side<br/>When I died, love, when I died"
+    }, 
+
+    {
+        "_id" : ObjectId("000000000000000000000011"),
+        "label" : "Excerpt from a song by a popular 21st century young pop star:<br/><br/>",
+        "excerpt" : "I never thought that it’d be easy<br/>Because we’re both so distant now<br/>And the walls are closing in on us<br/>And we’re wondering how<br/>No one has a solid answer<br/>But just walking in the dark<br/>And you can see the look on my face<br/>It just tears me apart"
+    }, 
+
+    {
+        "_id" : ObjectId("000000000000000000000012"),
+        "label" : "Excerpt from a song by a popular 21st century young pop star:<br/><br/>",
+        "excerpt" : "Then you found the Lord<br/>You gave your life to Him<br/>And you could not ignore<br/>The love he had for you<br/>And I wanted more of your heart<br/><br/>So when you're lost and you're tired<br/>When you're broken in two<br/>Let my love take you higher<br/>Because I still turn to you"
+    }, 
+
+    {
+        "_id" : ObjectId("000000000000000000000013"),
+        "label" : "Excerpt from a song by a popular 21st century young pop star:<br/><br/>",
+        "excerpt" : "Set a place at the table for someone who might need it<br/>Set a place at the table for someone to sit down and eat<br/>Kick their shoes off, put their feet up<br/>Forget about their troubles for a while<br/>When there’s a place at your table<br/>There’s a little hope for you and I"
+    },
+
+    {
+        "_id" : ObjectId("000000000000000000000014"),
+        "label" : "Excerpt from a song by a popular 21st century young pop star:<br/><br/>",
+        "excerpt" : "Subjected to my system, reflecting on the days<br/>When we used to be just friends<br/>Projected both our interests, our trust was in a bank<br/>That’s where our hearts were safe"
+    }, 
+
+    {
+        "_id" : ObjectId("000000000000000000000015"),
+        "label" : "Excerpt from a song by a popular 21st century young pop star:<br/><br/>",
+        "excerpt" : "It’s a big, big world<br/>And I’m going to show you all of it<br/>I’m going to lace you with pearls<br/>From every ocean that we’re swimming in<br/>We can make the sun shine in the moon light<br/>We can make the grey clouds turn to blue skies"
+    },
+    
+    {
+        "_id" : ObjectId("000000000000000000000016"),
+        "label" : "Excerpt from a poem by a prominent 20th century poet:<br/><br/>",
+        "excerpt" : "I never thought that it’d be easy<br/>Because we’re both so distant now<br/>And the walls are closing in on us<br/>And we’re wondering how<br/>No one has a solid answer<br/>But just walking in the dark<br/>And you can see the look on my face<br/>It just tears me apart"
+    }, 
+
+    {
+        "_id" : ObjectId("000000000000000000000017"),
+        "label" : "Excerpt from a poem by a prominent 20th century poet:<br/><br/>",
+        "excerpt" : "Then you found the Lord<br/>You gave your life to Him<br/>And you could not ignore<br/>The love he had for you<br/>And I wanted more of your heart<br/><br/>So when you're lost and you're tired<br/>When you're broken in two<br/>Let my love take you higher<br/>Because I still turn to you"
+    }, 
+
+    {
+        "_id" : ObjectId("000000000000000000000018"),
+        "label" : "Excerpt from a poem by a prominent 20th century poet:<br/><br/>",
+        "excerpt" : "Set a place at the table for someone who might need it<br/>Set a place at the table for someone to sit down and eat<br/>Kick their shoes off, put their feet up<br/>Forget about their troubles for a while<br/>When there’s a place at your table<br/>There’s a little hope for you and I"
+    },
+
+    {
+        "_id" : ObjectId("000000000000000000000019"),
+        "label" : "Excerpt from a poem by a prominent 20th century poet:<br/><br/>",
+        "excerpt" : "Subjected to my system, reflecting on the days<br/>When we used to be just friends<br/>Projected both our interests, our trust was in a bank<br/>That’s where our hearts were safe"
+    }, 
+
+    {
+        "_id" : ObjectId("000000000000000000000020"),
+        "label" : "Excerpt from a poem by a prominent 20th century poet:<br/><br/>",
+        "excerpt" : "It’s a big, big world<br/>And I’m going to show you all of it<br/>I’m going to lace you with pearls<br/>From every ocean that we’re swimming in<br/>We can make the sun shine in the moon light<br/>We can make the grey clouds turn to blue skies"
+    }
 ]

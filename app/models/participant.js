@@ -18,7 +18,7 @@ var ParticipantSchema = new Schema({
     internet : Boolean,
     recognition : Boolean,
     comments: String,
-    unique: String
+    code: String
 });
 
 module.exports = mongoose.model('Participant', ParticipantSchema);
