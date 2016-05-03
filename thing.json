@@ -1,0 +1,14 @@
+[
+    {
+        "_id" : "ObjectId(000000000000000000000001)",
+        "label" : "Excerpt from a poem by a prominent 20th century poet:<br/><br/>",
+        "excerpt" : "She gazes through dull blue pupils<br/>Set in the whites of her eyes<br/>She closes them, and the key<br/>Turns by itself<br/><br/>She opens her eyes, and they're blank<br/>Like a statue's in a museum<br/>Her machine begins to move, the key turns<br/>Again, her eyes change, she sings"
+    }, 
+
+    {
+        "_id" : "ObjectId(000000000000000000000002)",
+        "label" : "Excerpt from a poem by a prominent 20th century poet:<br/><br/>",
+        "excerpt" : "I speak of love that comes to mind<br/>The moon is faithful, although blind<br/>She moves in thought she cannot speak<br/>Perfect care has made her bleak<br/><br/>I never dreamed the sea so deep,<br/>The earth so dark; so long my sleep,<br/>I have become another child<br/>I wake to see the world go wild"
+    }
+
+]

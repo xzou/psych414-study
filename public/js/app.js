@@ -6,7 +6,10 @@ var expApp = angular.module('expApp', [
     'ngResource',
     'expControllers',
     'expDirectives', 
-    'expServices'
+    'expServices',
+    'expFilters',
+    'ui.bootstrap',
+    'ngAnimate'
 ]);
 
 expApp.config(['$routeProvider',

@@ -2,6 +2,7 @@
 // Routes for API
 
 var Excerpt = require('./models/excerpt');
+var Participant = require('./models/participant'); 
 var express = require('express');
 
 module.exports = function(app) {
@@ -35,11 +36,87 @@ module.exports = function(app) {
                 if (err)
                     res.send(err);
                 res.json(excerpt);
-                console.log("ID: ", typeof req.params.excerpt_id);
             }); 
         });
 
-    // More routes for the API will be here
+    // Routes that end in /participants
+    // ------------------------------------------------------------
+    // Get all participants
+        app.get('/api/participants', function(req, res) {
+            Participant.find(function(err, participants) {
+                if (err)
+                    res.send(err);
+                res.json(participants);
+            });
+        });
+
+    // Get a single participant
+        app.get('/api/participants/:participant_id', function(req, res) {
+            Participant.findById(req.params.participant_id, function(err, participant) {
+                if (err)
+                    res.send(err);
+                res.json(participant);
+            });
+        });
+
+    // Create a participant
+        app.post('/api/participants', function(req, res) {
+            var participant = new Participant();
+            
+            participant.first_name = req.body.first_name;
+            participant.last_name = req.body.last_name;
+            participant.mturk_id = req.body.mturk_id; 
+            participant.excerpts = req.body.excerpts; 
+            participant.internet = req.body.internet;
+            participant.recognition = req.body.recognition;
+            participant.comments = req.body.comments;
+            participant.code = req.body.code;
+
+
+            participant.save(function(err) {
+                if (err)
+                    res.send(err);
+                res.json(participant);
+            });
+        });
+
+    // Update a participant
+        app.put('/api/participants/:participant_id', function(req, res) {
+            Participant.findById(req.params.participant_id, function(err, participant) {
+                if(err)
+                    res.send(err);
+
+                participant.first_name = req.body.first_name;
+                participant.last_name = req.body.last_name;
+                participant.mturk_id = req.body.mturk_id; 
+                participant.excerpts = req.body.excerpts; 
+                participant.internet = req.body.internet;
+                participant.recognition = req.body.recognition;
+                participant.comments = req.body.comments;
+                participant.code = req.body.code;
+
+                participant.save(function(err) {
+                    if(err)
+                        res.send(err);
+                    res.json(participant);
+                });
+            });
+        });
+
+    // Remove a participant
+    app.delete('/api/participants/:participant_id', function(req, res) {
+        Participant.remove({
+            _id : req.params.participant_id
+        }, function(err, participant) {
+            if (err)
+                res.send(err);
+            res.json({ message: 'Deleted'});
+        });
+    });
+
+
+
+
 
 
     // FRONTEND ROUTES

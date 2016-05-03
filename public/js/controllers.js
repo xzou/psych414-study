@@ -18,14 +18,16 @@ expControllers.controller('ConsentCtrl', ['$scope', '$location', 'Go', function(
     }
 }]);
 
-expControllers.controller('StudyCtrl', ['$scope', '$location', '$log', 'Excerpt', 'Go', function($scope, $location, $log, Excerpt, Go) {
-    $scope.hello = 'This is the study';
-    var excerpt = Excerpt.query();
-    $scope.excerpts = excerpt;
-    $scope.go = function(path) {
-        Go.go(path);
-    }
-}]);
+expControllers.controller('StudyCtrl', ['$scope', '$location', '$log', 'Excerpt', 'Go', '$animate',
+        function($scope, $location, $log, Excerpt, Go, $animate) {
+            $scope.hello = 'This is the study';
+            var excerpt = Excerpt.query();
+            $scope.excerpts = excerpt;
+
+            $scope.go = function(path) {
+                Go.go(path);
+            }
+        }]);
 
 expControllers.controller('DebriefCtrl', ['$scope', '$location', 'Go', function($scope, $location, Go) {
     $scope.hello = 'This is the debriefing';
