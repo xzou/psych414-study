@@ -237,12 +237,8 @@ textarea:focus, input:focus {
 
 /*==============EXPLANATION=============*/
 
-.explanation h3 {
-    padding-bottom: 20px;
-}
-
 .explanation {
-    width: 900px;
+    width: 750px;
     padding: 20px 0 20px 20%;
 }
 
