@@ -30,6 +30,14 @@ h3 {
     color: #303030;
 }
 
+.button-next {
+    cursor: pointer;
+}
+
+.submit {
+    cursor: pointer;
+}
+
 /*==============INTRO=============*/
 .intro {
     padding-top: 10%;
