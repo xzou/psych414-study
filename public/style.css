@@ -208,20 +208,19 @@ textarea:focus, input:focus {
     vertical-align: middle;
 }
 
-.debrief h3 {
-    padding-bottom: 12px;
-}
-
 .question {
-    padding-bottom: 55px;
+    padding-bottom: 45px;
 }
 
 #comment {
-    width: 600px;
+    width: 650px;
     height: 200px;
     padding: 10px;
     resize: none;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
 }
+
 
 
 
