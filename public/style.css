@@ -96,7 +96,7 @@ h3 {
 }
 
 .button-next:hover {
-    background-color: #808080;
+    background-color: #404040;
 }
 
 textarea:focus, input:focus {
@@ -120,7 +120,7 @@ textarea:focus, input:focus {
 }
 
 .submit:hover {
-    background-color: #808080;
+    background-color: #404040;
 }
 
 /*==============STUDY=============*/
