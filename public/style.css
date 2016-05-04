@@ -92,6 +92,7 @@ textarea:focus, input:focus {
 
 .consent {
     padding: 60px 0;
+    padding-left: 40%;
     width: 700px;
 }
 
