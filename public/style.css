@@ -242,10 +242,6 @@ textarea:focus, input:focus {
     padding: 7px 0 20px 20%;
 }
 
-.explanation h3 {
-    margin-bottom: -3px;
-}
-
 .explanation button {
     width: 170px;
 }
