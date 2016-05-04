@@ -1,4 +1,7 @@
 {
+    "engines" : {
+        "node": "4.4.2"
+    },
   "name": "node-api",
   "main": "server.js",
   "dependencies": {
