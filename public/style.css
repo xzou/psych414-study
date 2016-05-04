@@ -1,0 +1,177 @@
+/*==============OVERALL=============*/
+.col-xs-9 {
+    padding-top: 2%;
+}
+
+
+/*==============FONTS=============*/
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 90px;
+    line-height: 90%;
+    margin-bottom: 20px;
+    color: #303030;
+}
+
+p {
+    font-family: 'Crimson Text', serif;
+    font-size: 18px;
+    line-height: 180%;
+    margin-bottom: 20px;
+    color: #404040;
+}
+
+/*==============INTRO=============*/
+.intro {
+    padding-top: 25%;
+}
+
+#intro-info {
+    padding-left: 16px;
+}
+
+#intro-info p {
+    line-height: 160%;
+    font-size: 20px;
+}
+
+.form_text{
+    border: none;
+    height: 40px;
+    background-color: #DEDEDE;
+    padding-left: 15px;
+    color: #808080;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: #808080;
+    padding-left: 10px;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #808080;
+    opacity:  1;
+    padding-left: 10px;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #808080;
+    opacity:  1;
+    padding-left: 10px;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #808080;
+    padding-left: 10px;
+}
+
+.button_next {
+    border: none;
+    width: 60px;
+    height: 40px;
+    background-color: #E34646;
+    color: white;
+}
+
+textarea:focus, input:focus {
+    outline: none;
+}
+
+/*==============CONSENT FORM=============*/
+
+.consent {
+    padding: 60px 0;
+    width: 700px;
+}
+
+.submit {
+    border: none;
+    width: 160px;
+    height: 40px;
+    background-color: #E34646;
+    color: white;
+}
+
+/*==============STUDIES=============*/
+.study {
+    padding: 60px 0;
+    width: 900px;
+}
+
+.study p {
+    line-height: 140%;
+}
+
+.instructions {
+    width: 650px;
+}
+
+.poem {
+    padding-bottom:20px;
+}
+
+.text-poem {
+    font-family: 'Crimson Text', serif;
+    font-size: 18px;
+}
+
+.analysis {
+    width: 650px;
+    height: 300px;
+    padding: 10px;
+    resize: none;
+    padding-bottom: 30px;
+}
+
+.wrap {
+    padding-top: 30px;
+}
+
+.segmented {
+    width: 900px;
+    padding-bottom: 30px;
+}
+
+.segmented input[type=radio] {
+    display: none;
+}
+
+.segmented label {
+    background: #909090;
+    height: 70px;
+    min-width: 100px;
+    text-align: center;
+    padding: 5px 25px;
+    line-height: 120%;
+    color: #eee;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+.segmented input:checked + label {
+    background: #E34646;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

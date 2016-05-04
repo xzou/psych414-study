@@ -6,7 +6,7 @@ var Schema = mongoose.Schema;
 var ParticipantSchema = new Schema({
     first_name : String,
     last_name : String,
-    trial_id : { type: mongoose.Schema.Types.ObjectId, ref : 'Trial'},
+    condition : { type: mongoose.Schema.Types.ObjectId, ref : 'Trial'},
     time : { type : Date, default : Date.now },
     mturk_id : String,
     excerpts : {

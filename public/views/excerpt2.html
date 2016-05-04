@@ -1,15 +1,14 @@
 <ul class="trials">
-<!--    <li ng-repeat="excerpt in excerpts">
-        <span ng-bind-html="excerpt.label | trustHTML"></span>
-        <span ng-bind-html="excerpt.excerpt | trustHTML"></span> -->
-        <span ng-bind-html="excerpt.label | trustHTML"></span>
-        <span ng-bind-html="excerpt.excerpt | trustHTML"></span>
+        <div class="poem">
+            <span class="text-poem" ng-bind-html="excerpt.label | trustHTML"></span>
+            <span class="text-poem" ng-bind-html="excerpt.excerpt | trustHTML"></span>
+        </div>
         <div>
-            </p>In the box below, write a brief analysis of this excerpt. You may dissect the author's intentions, create your own interpretation, 
+            <p>In the box below, write a brief analysis of this excerpt. You may dissect the author's intentions, create your own interpretation, 
             and/or examine how the author employs literary techniques to create an effect.</p>
         <div>
         <div>
-            <textarea ng-model="analysis2"></textarea>
+            <textarea class="analysis" ng-model="analysis2"></textarea>
         </div>
 
         <div class="wrap">
@@ -258,10 +257,6 @@
                         </li>
                     </ul>
             </form>
-            <div class="buttons">
-                <button class="submit">submit</button>
-            </div>
-          </form>
         </div>
     </li>
 </ul>

@@ -20,6 +20,30 @@ expServices.factory('Trial', ['$resource', '$log', function($resource, $log) {
     return trial;
 }]);
 
+expServices.factory('Excerpts', ['Trial', '$log', function(Trial, $log) {
+    var excerpts = {
+        excerpt1 : "",
+        excerpt2 : "",
+        excerpt3 : "",
+        id : "",
+        condition : ""
+    }; 
+
+    Trial.query().$promise.then (function(results) {
+        angular.forEach(results, function (result, index) {
+            if (0 == index) {
+                excerpts.excerpt1 = result.excerpt1;
+                excerpts.excerpt2 = result.excerpt2;
+                excerpts.excerpt3 = result.excerpt3; 
+                excerpts.id = result._id;
+                excerpts.condition = result.condition;
+            }
+        });
+    });
+
+    return excerpts;
+}]);
+
 
 expServices.factory('ParticipantFactory', function() {
     var participant = {

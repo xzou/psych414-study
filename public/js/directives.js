@@ -4,13 +4,13 @@
 
 var expDirectives = angular.module('expDirectives', []);
 
-expDirectives.directive('excerpt1', ['Excerpt', 'ParticipantFactory', '$log', function(Excerpt, ParticipantFactory, $log) {
+expDirectives.directive('excerpt1', ['Excerpt', 'ParticipantFactory', 'Excerpts', '$log', function(Excerpt, ParticipantFactory, Excerpts, $log) {
    return {
        restrict: 'E',
        templateUrl: 'views/excerpt1.html',
        scope: {},
        link: function (scope, elem, attr) {
-            var id = '000000000000000000000001';
+            var id = Excerpts.excerpt1;
             scope.excerpt = Excerpt.get({excerpt_id: id});
             ParticipantFactory.excerpts.excerpt1_id = id;
             scope.$watch('analysis1', function(newValue, oldValue) {
@@ -28,13 +28,13 @@ expDirectives.directive('excerpt1', ['Excerpt', 'ParticipantFactory', '$log', fu
     
 }]);
 
-expDirectives.directive('excerpt2', ['Excerpt', 'ParticipantFactory', '$log', function(Excerpt, ParticipantFactory, $log) {
+expDirectives.directive('excerpt2', ['Excerpt', 'ParticipantFactory', '$log', 'Excerpts', function(Excerpt, ParticipantFactory, $log, Excerpts) {
    return {
        restrict: 'E',
        templateUrl: 'views/excerpt2.html',
        scope: {},
        link: function(scope, elem, attr) {
-            var id = '000000000000000000000002';
+            var id = Excerpts.excerpt2;
             scope.excerpt = Excerpt.get({excerpt_id: id});
             ParticipantFactory.excerpts.excerpt2_id = id;
             scope.$watch('analysis2', function(newValue, oldValue) {
@@ -51,13 +51,13 @@ expDirectives.directive('excerpt2', ['Excerpt', 'ParticipantFactory', '$log', fu
     }
 }]);
 
-expDirectives.directive('excerpt3', ['Excerpt', 'ParticipantFactory', '$log', function(Excerpt, ParticipantFactory, $log) {
+expDirectives.directive('excerpt3', ['Excerpt', 'ParticipantFactory', '$log', 'Excerpts', function(Excerpt, ParticipantFactory, $log, Excerpts) {
    return {
        restrict: 'E',
        templateUrl: 'views/excerpt3.html',
        scope: {},
        link: function(scope, elem, attr) {
-            var id = '000000000000000000000003';
+            var id = Excerpts.excerpt3;
             scope.excerpt = Excerpt.get({excerpt_id: id});
             ParticipantFactory.excerpts.excerpt3_id = id;
             scope.$watch('analysis3', function(newValue, oldValue) {

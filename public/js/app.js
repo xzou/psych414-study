@@ -8,7 +8,6 @@ var expApp = angular.module('expApp', [
     'expDirectives', 
     'expServices',
     'expFilters',
-    'ui.bootstrap',
     'ngAnimate'
 ]);
 

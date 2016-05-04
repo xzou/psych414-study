@@ -30,13 +30,8 @@ expControllers.controller('ConsentCtrl', ['$scope', '$location', '$log', 'Go', '
     }
 }]);
 
-expControllers.controller('StudyCtrl', ['$scope', '$location', '$log', 'Excerpt', 'Go', 'Trial',
+expControllers.controller('StudyCtrl', ['$scope', '$location', '$log', 'Excerpt', 'Go', 'Trial', 
         function($scope, $location, $log, Excerpt, Go, Trial) {
-            $scope.trials = Trial.query();
-            $log.log($scope.trials);
-
-            for (var key in $scope.trials) break;
-            console.log(key);
             $scope.hello = 'This is the study';
             $scope.go = function(path) {
                 Go.go(path);
@@ -67,8 +62,8 @@ expControllers.controller('ExplanationCtrl', ['$scope', '$location', 'Go', funct
     }
 }]);
 
-expControllers.controller('CodeCtrl', ['$scope', '$location', 'Go', 'ParticipantFactory', 'Participant',
-        function($scope, $location, Go, ParticipantFactory, Participant) {
+expControllers.controller('CodeCtrl', ['$scope', '$location', 'Go', 'ParticipantFactory', 'Participant', 'Excerpts', 'Trial',
+        function($scope, $location, Go, ParticipantFactory, Participant, Excerpts, Trial) {
         $scope.hello = 'This is the code generator or whatever';
         $scope.go = function(path) {
             Go.go(path);
@@ -85,5 +80,8 @@ expControllers.controller('CodeCtrl', ['$scope', '$location', 'Go', 'Participant
         participant.code = ParticipantFactory.code; 
 
         participant.$save(); 
+
+        Trial.delete({trial_id : Excerpts.id});
+
 }]);
 
