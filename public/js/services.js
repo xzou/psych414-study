@@ -47,8 +47,7 @@ expServices.factory('Excerpts', ['Trial', '$log', function(Trial, $log) {
 
 expServices.factory('ParticipantFactory', function() {
     var participant = {
-        first_name : "",
-        last_name : "",
+        consent : false,
         mturk_id : "",
         excerpts : {
             excerpt1_id : '',

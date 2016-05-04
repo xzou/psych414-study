@@ -4,9 +4,7 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 var ParticipantSchema = new Schema({
-    first_name : String,
-    last_name : String,
-    condition : { type: mongoose.Schema.Types.ObjectId, ref : 'Trial'},
+    consent : Boolean,
     time : { type : Date, default : Date.now },
     mturk_id : String,
     excerpts : {

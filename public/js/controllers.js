@@ -18,12 +18,9 @@ expControllers.controller('IntroCtrl', ['$scope', '$location', '$log', 'Go', 'Pa
 
 expControllers.controller('ConsentCtrl', ['$scope', '$location', '$log', 'Go', 'ParticipantFactory', function($scope, $location, $log, Go, ParticipantFactory) {
     $scope.hello = 'This is the informed consent form';
-    $scope.first_name = '';
-    $scope.last_name = '';
-    $scope.$watchGroup(['first_name', 'last_name'], function(newValues, oldValues, scope) {
-        ParticipantFactory.first_name = newValues[0];
-        ParticipantFactory.last_name = newValues[1];
-        $log.log(ParticipantFactory);
+    $scope.consent = false;
+    $scope.$watch('consent', function(newValue, oldValue) {
+        ParticipantFactory.consent = newValue;
     });
     $scope.go = function(path) {
         Go.go(path);
