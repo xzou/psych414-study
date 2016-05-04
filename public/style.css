@@ -159,8 +159,8 @@ textarea:focus, input:focus {
 
 .segmented label {
     background: #d6d6d6;
-    height: 120px;
-    width: 100px;
+    height: 100px;
+    width: 85px;
     text-align: center;
     padding: 15px 25px;
     line-height: 120%;
