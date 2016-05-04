@@ -39,6 +39,7 @@ expServices.factory('Excerpts', ['Trial', '$log', function(Trial, $log) {
                 excerpts.condition = result.condition;
             }
         });
+    $log.log(excerpts);
     });
 
     return excerpts;
@@ -48,7 +49,8 @@ expServices.factory('Excerpts', ['Trial', '$log', function(Trial, $log) {
 expServices.factory('ParticipantFactory', function() {
     var participant = {
         consent : false,
-        mturk_id : "",
+        condition : '',
+        mturk_id : '',
         excerpts : {
             excerpt1_id : '',
             analysis1 : '',

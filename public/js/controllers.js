@@ -19,6 +19,7 @@ expControllers.controller('IntroCtrl', ['$scope', '$location', '$log', 'Go', 'Pa
 expControllers.controller('ConsentCtrl', ['$scope', '$location', '$log', 'Go', 'ParticipantFactory', function($scope, $location, $log, Go, ParticipantFactory) {
     $scope.hello = 'This is the informed consent form';
     $scope.consent = false;
+    $log.log ($scope.consent);
     $scope.$watch('consent', function(newValue, oldValue) {
         ParticipantFactory.consent = newValue;
     });
@@ -44,7 +45,6 @@ expControllers.controller('DebriefCtrl', ['$scope', '$location', '$log', 'Go', '
         ParticipantFactory.internet = newValues[0];
         ParticipantFactory.recognition = newValues[1];
         ParticipantFactory.comment = newValues[2];
-        $log.log(ParticipantFactory);
     });
     $scope.go = function(path) {
         Go.go(path);
@@ -67,14 +67,15 @@ expControllers.controller('CodeCtrl', ['$scope', '$location', 'Go', 'Participant
         }
 
         var participant = new Participant();
-        participant.first_name = ParticipantFactory.first_name;
-        participant.last_name = ParticipantFactory.last_name;
+        participant.consent = ParticipantFactory.consent;
+        participant.condition = ParticipantFactory.condition;
         participant.mturk_id = ParticipantFactory.mturk_id;
         participant.excerpts = ParticipantFactory.excerpts;
         participant.internet = ParticipantFactory.internet;
         participant.recognition = ParticipantFactory.recognition;
         participant.comments = ParticipantFactory.comments;
         participant.code = ParticipantFactory.code; 
+        console.log(participant);
 
         participant.$save(); 
 

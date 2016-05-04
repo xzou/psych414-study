@@ -64,8 +64,8 @@ module.exports = function(app) {
         app.post('/api/participants', function(req, res) {
             var participant = new Participant();
             
-            participant.first_name = req.body.first_name;
-            participant.last_name = req.body.last_name;
+            participant.consent = req.body.consent;
+            participant.condition = req.body.condition;
             participant.mturk_id = req.body.mturk_id; 
             participant.excerpts = req.body.excerpts; 
             participant.internet = req.body.internet;
@@ -75,6 +75,7 @@ module.exports = function(app) {
 
 
             participant.save(function(err) {
+                console.log(req.body);
                 if (err)
                     res.send(err);
                 res.json(participant);
@@ -87,8 +88,8 @@ module.exports = function(app) {
                 if(err)
                     res.send(err);
 
-                participant.first_name = req.body.first_name;
-                participant.last_name = req.body.last_name;
+                participant.consent = req.body.consent;
+                participant.condition = req.body.condition;
                 participant.mturk_id = req.body.mturk_id; 
                 participant.excerpts = req.body.excerpts; 
                 participant.internet = req.body.internet;

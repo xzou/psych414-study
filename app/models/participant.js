@@ -6,6 +6,7 @@ var Schema = mongoose.Schema;
 var ParticipantSchema = new Schema({
     consent : Boolean,
     time : { type : Date, default : Date.now },
+    condition : String,
     mturk_id : String,
     excerpts : {
         excerpt1_id : String,

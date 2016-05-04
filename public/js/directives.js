@@ -13,6 +13,7 @@ expDirectives.directive('excerpt1', ['Excerpt', 'ParticipantFactory', 'Excerpts'
             var id = Excerpts.excerpt1;
             scope.excerpt = Excerpt.get({excerpt_id: id});
             ParticipantFactory.excerpts.excerpt1_id = id;
+            ParticipantFactory.condition = Excerpts.condition;
             scope.$watch('analysis1', function(newValue, oldValue) {
                 ParticipantFactory.excerpts.analysis1 = newValue;
             });
@@ -21,7 +22,6 @@ expDirectives.directive('excerpt1', ['Excerpt', 'ParticipantFactory', 'Excerpts'
             scope.$watchGroup(['ratings1A', 'ratings1B', 'ratings1C', 'ratings1D', 'ratings1E', 'ratings1F', 'ratings1G'], 
                     function(newValues, oldValues, scope) {
                         ParticipantFactory.excerpts.ratings1 = newValues;
-                        $log.log(ParticipantFactory)
             });
         }
     }
@@ -45,7 +45,6 @@ expDirectives.directive('excerpt2', ['Excerpt', 'ParticipantFactory', '$log', 'E
             scope.$watchGroup(['ratings2A', 'ratings2B', 'ratings2C', 'ratings2D', 'ratings2E', 'ratings2F', 'ratings2G'], 
                     function(newValues, oldValues, scope) {
                         ParticipantFactory.excerpts.ratings2 = newValues;
-                        $log.log(ParticipantFactory)
             });
         }
     }
@@ -68,7 +67,6 @@ expDirectives.directive('excerpt3', ['Excerpt', 'ParticipantFactory', '$log', 'E
             scope.$watchGroup(['ratings3A', 'ratings3B', 'ratings3C', 'ratings3D', 'ratings3E', 'ratings3F', 'ratings3G'], 
                     function(newValues, oldValues, scope) {
                         ParticipantFactory.excerpts.ratings3 = newValues;
-                        $log.log(ParticipantFactory)
             });
         }
     }
