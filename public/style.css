@@ -117,6 +117,7 @@ textarea:focus, input:focus {
     height: 40px;
     background-color: #E34646;
     color: white;
+    margin-top: 20px;
 }
 
 .submit:hover {
@@ -129,9 +130,7 @@ textarea:focus, input:focus {
     line-height: 180%;
     margin-bottom: 20px;
     color: #404040;
-    padding-bottom: 20px;
 }
-
 
 /*==============STUDY=============*/
 .study {
