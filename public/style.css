@@ -211,6 +211,10 @@ textarea:focus, input:focus {
     padding-bottom: 30px;
 }
 
+.question label {
+    vertical-align: middle;
+}
+
 #comment {
     width: 650px;
     height: 200px;
@@ -230,6 +234,22 @@ textarea:focus, input:focus {
 #debrief-text {
     margin-bottom: -20px;
 }
+
+/*==============EXPLANATION=============*/
+
+.explanation h3 {
+    padding-bottom: 20px;
+}
+
+.explanation {
+    width: 900px;
+    padding: 20px 0 20px 20%;
+}
+
+.explanation button {
+    width: 170px;
+}
+
 
 
 
