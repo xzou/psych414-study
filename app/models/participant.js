@@ -3,18 +3,23 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
-var Excerpt = new Schema({
-    excerpt_id : String,
-    analysis : String,
-    ratings : [Number]
-});
-
 var ParticipantSchema = new Schema({
     first_name : String,
     last_name : String,
+    trial_id : { type: mongoose.Schema.Types.ObjectId, ref : 'Trial'},
     time : { type : Date, default : Date.now },
     mturk_id : String,
-    excerpts : [Excerpt],
+    excerpts : {
+        excerpt1_id : String,
+        analysis1 : String,
+        ratings1 : [],
+        excerpt2_id : String,
+        analysis2 : String,
+        ratings2 : [],
+        excerpt3_id : String,
+        analysis3 : String,
+        ratings3 : []
+    },
     internet : Boolean,
     recognition : Boolean,
     comments: String,

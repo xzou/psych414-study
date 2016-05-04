@@ -3,6 +3,7 @@
 
 var Excerpt = require('./models/excerpt');
 var Participant = require('./models/participant'); 
+var Trial = require('./models/trial');
 var express = require('express');
 
 module.exports = function(app) {
@@ -113,6 +114,29 @@ module.exports = function(app) {
             res.json({ message: 'Deleted'});
         });
     });
+
+    // Routes that end in /trials
+    // ----------------------------------------------------------
+    // Get all trials
+        app.get('/api/trials', function(req, res) {
+            Trial.find(function(err, trials) {
+                if (err)
+                    res.send(err);
+                res.json(trials);
+            });
+        }); 
+
+        
+    // Remove a trial
+        app.delete('/api/trials/:trial_id', function(req, res) {
+            Trial.remove({
+                _id : req.params.trial_id
+            }, function(err, trial) {
+                if (err)
+                    res.send(err);
+                res.json({ message: 'Deleted'});
+            });
+        });
 
     // FRONTEND ROUTES
     // ===========================================================

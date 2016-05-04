@@ -23,8 +23,16 @@ expApp.config(['$routeProvider',
                 templateUrl: 'views/consent.html',
                 controller: 'ConsentCtrl'
             }).
-            when('/study', {
-                templateUrl: 'views/study.html',
+            when('/1', {
+                templateUrl: 'views/study1.html',
+                controller: 'StudyCtrl'
+            }).
+            when('/2', {
+                templateUrl: 'views/study2.html',
+                controller: 'StudyCtrl'
+            }).
+            when('/3', {
+                templateUrl: 'views/study3.html',
                 controller: 'StudyCtrl'
             }).
             when('/debriefing', {

@@ -10,7 +10,18 @@ expServices.factory('Excerpt', ['$resource', '$log', function($resource, $log) {
     return excerpt;
 }]);
 
-expServices.factory('Participant', function() {
+expServices.factory('Participant', ['$resource', '$log', function($resource, $log) {
+    var participant = $resource('/api/participants/:participant_id');
+    return participant;
+}]);
+
+expServices.factory('Trial', ['$resource', '$log', function($resource, $log) {
+    var trial = $resource('/api/trials/:trial_id');
+    return trial;
+}]);
+
+
+expServices.factory('ParticipantFactory', function() {
     var participant = {
         first_name : "",
         last_name : "",
@@ -28,7 +39,7 @@ expServices.factory('Participant', function() {
         },
         internet : false,
         recognition : false,
-        comments : '',
+        comment : '',
         code : ''
     };
 
