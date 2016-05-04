@@ -23,6 +23,12 @@ p {
     color: #404040;
 }
 
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 60px;
+}
+
 /*==============INTRO=============*/
 .intro {
     padding-top: 10%;
@@ -108,7 +114,7 @@ textarea:focus, input:focus {
     background-color: #808080;
 }
 
-/*==============STUDIES=============*/
+/*==============STUDY=============*/
 .study {
     padding: 60px 0;
     width: 1000px;
@@ -187,6 +193,35 @@ textarea:focus, input:focus {
     padding-left: 61%;
     padding-top: 20px;
 }
+
+/*==============DEBRIEFING=============*/
+
+.debrief {
+    padding-top:30px;
+    padding-bottom: 30px;
+}
+
+.debrief label {
+    width: 170px;
+    height: 60px;
+}
+
+.debrief h3 {
+    padding-bottom: 20px;
+}
+
+.question {
+    padding-bottom: 55px;
+}
+
+#comment {
+    width: 600px;
+    height: 200px;
+    padding: 10px;
+    resize: none;
+}
+
+
 
 
 

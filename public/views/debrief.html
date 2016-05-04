@@ -1,34 +1,36 @@
-{{hello}}
-<button ng-click="go('/debriefing/explanation')">>></button>
-<form action="">
-    <label class="statement">Did you consult the internet</label>
-    <ul>
-        <li>
-            <input type="radio" name="question" value=true ng-model="internet">
-            <label>Yes</label>
-        </li>
-        <li>
-            <input type="radio" name="question" value=false ng-model="internet">
-            <label>No</label>
-        </li>
-    </ul>
-</form>
+<div class="debrief">
+    <h3>Debriefing</h3>
+    <p>Thank you very much! Please answer the following questions honestly.<br/>
+    <strong>You will be paid</strong> even if you did consult the internet, or if you recognized any of the excerpts. <br/>
+    However, it is important for the purposes of this study that you answer honestly <br/> 
+    so we can know whether or not your data can be used. </p>
+    <br/>
 
-<form action="">
-    <label class="statement">Did you recognize any of these excerpts</label>
-    <ul>
-        <li>
-            <input type="radio" name="question" value=true ng-model="recognition">
-            <label>Yes</label>
-        </li>
-        <li>
-            <input type="radio" name="question" value=false ng-model="recognition">
-            <label>No</label>
-        </li>
-    </ul>
-</form>
+<span class="segmented">
+    <div class="question">
+        <p>Did you consult the internet during this study, or did you look up any of the excerpts on a search engine?</p>
+        <form action="">
+            <input type="radio" name="internet" value=true id="yes_int" ng-model="internet">
+            <label for="yes_int">Yes</label>
+            <input type="radio" name="internet" value=false id="no_int" ng-model="internet">
+            <label for="no_int">No</label>
+        </form>
+    </div> <!--question-->
+
+    <div class="question">
+        <p>Did you recognize any of the excerpts that you read?</p>
+        <form action="">
+            <input type="radio" name="recognition" value=true id="yes_rec" ng-model="recognition">
+            <label for="yes_rec">Yes</label>
+            <input type="radio" name="recognition" value=false id="no_rec" ng-model="recognition">
+            <label for="no_rec">No</label>
+        </form>
+    </div> <!--question-->
+</span>
 
 <div>
-    <p>Do you have any comments</p>
-    <textarea ng-model="comment"></textarea>
+    <p>Finally, do you have any questions, concerns, or comments about this study?</p>
+    <textarea id="comment" ng-model="comment"></textarea>
 </div>
+<button class="button-next" ng-click="go('/debriefing/explanation')">>></button>
+</div> <!--debrief-->
