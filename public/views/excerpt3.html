@@ -4,260 +4,157 @@
             <span class="text-poem" ng-bind-html="excerpt.excerpt | trustHTML"></span>
         </div>
         <div>
-            <p>In the box below, write a brief analysis of this excerpt. You may dissect the author's intentions, create your own interpretation, 
-            and/or examine how the author employs literary techniques to create an effect.</p>
+            <p class="instructions">In the box below, write a brief analysis of this excerpt. You may dissect the author's intentions, create your own interpretation, and/or examine how the author employs literary techniques to create an effect.</p>
         <div>
         <div>
             <textarea class="analysis" ng-model="analysis3"></textarea>
         </div>
 
         <div class="wrap">
+            <p>On a scale of 1-7 (<em>1 = very bad, 7 = very good</em>), how would you rate 
+            the quality of this excerpt?</p>
             <form action="">
-                <label class="statement">On a scale of 1-7 (<em>1 = very bad, 7 = very good</em>), how would you rate 
-                    the quality of this excerpt?</label>
-                    <ul class='likert'>
-                        <li>
-                            <input type="radio" name="likert" value="1" ng-model="ratings3A">
-                            <label>1 Very bad</label>
-                            {{ratings1A}}
-                        </li>
-                        <li>
-                            <input type="radio" name="likert" value="2" ng-model="ratings3A">
-                            <label>2 Bad</label>
-                        </li>
-                        <li>
-                            <input type="radio" name="likert" value="3" ng-model="ratings3A">
-                            <label>3 Somewhat bad</label>
-                        </li>
-                        <li>
-                            <input type="radio" name="likert" value="4" ng-model="ratings3A">
-                            <label>4 Neither good nor bad</label>
-                        </li>
-                        <li>
-                            <input type="radio" name="likert" value="5" ng-model="ratings3A">
-                            <label>5 Somewhat good</label>
-                        </li>
-                        <li>
-                            <input type="radio" name="likert" value="6" ng-model="ratings3A">
-                            <label>6 Good</label>
-                        </li>
-                        <li>
-                            <input type="radio" name="likert" value="7" ng-model="ratings3A">
-                            <label>7 Very good</label>
-                        </li>
-                    </ul>
+            <span class="segmented">
+                    <input type="radio" name="quality" value="1" id="1o" ng-model="ratings3A">
+                    <label for="1o">1<br/><br/>Very bad<br/>&nbsp;<br/>&nbsp;</label> 
+                    <input type="radio" name="quality" value="2" id="2o" ng-model="ratings3A">
+                    <label for="2o">2<br/><br/>Bad<br/>&nbsp;<br/>&nbsp;</label>
+                    <input type="radio" name="quality" value="3" id="3o" ng-model="ratings3A">
+                    <label for="3o">3<br/><br/>Somewhat<br/>bad<br/>&nbsp;</label> 
+                    <input type="radio" name="quality" value="4" id="4o" ng-model="ratings3A">
+                    <label for="4o">4<br/><br/>Neither good<br/> nor bad</label> 
+                    <input type="radio" name="quality" value="5" id="5o" ng-model="ratings3A">
+                    <label for="5o">5 <br/><br/>Somewhat<br/>good<br/>&nbsp;</label> 
+                    <input type="radio" name="quality" value="6" id="6o" ng-model="ratings3A">
+                    <label for="6o">6<br/><br/>Good<br/>&nbsp;<br/>&nbsp;</label> 
+                    <input type="radio" name="quality" value="7" id="7o" ng-model="ratings3A">
+                    <label for="7o">7<br/><br/>Very good<br/>&nbsp;</label> 
+            </span>
             </form>
+            
+            <p>On a scale of 1-7 (<em>1 = dislike very much, 7 = like very much</em>), how much do you like 
+                    this excerpt?</p>
             <form action="">
-                <label class="statement">On a scale of 1-7 (<em>1 = dislike very much, 7 = like very much</em>), how much do you like 
-                    this excerpt?</label>
-                    <ul class='likert'>
-                        <li>
-                            <input type="radio" name="likert" value="1" ng-model="ratings3B">
-                            <label>1 Dislike very much</label>
-                            {{ratings1B}}
-                        </li>
-                        <li>
-                            <input type="radio" name="likert" value="2" ng-model="ratings3B">
-                            <label>2 Dislike</label>
-                        </li>
-                        <li>
-                            <input type="radio" name="likert" value="3" ng-model="ratings3B">
-                            <label>3 Somewhat dislike</label>
-                        </li>
-                        <li>
-                            <input type="radio" name="likert" value="4" ng-model="ratings3B">
-                            <label>4 Neither like nor dislike</label>
-                        </li>
-                        <li>
-                            <input type="radio" name="likert" value="5" ng-model="ratings3B">
-                            <label>5 Somewhat like</label>
-                        </li>
-                        <li>
-                            <input type="radio" name="likert" value="6" ng-model="ratings3B">
-                            <label>6 Like</label>
-                        </li>
-                        <li>
-                            <input type="radio" name="likert" value="7" ng-model="ratings3B">
-                            <label>7 Like very much</label>
-                        </li>
-                    </ul>
+            <span class="segmented">
+                    <input type="radio" name="like" value="1" id="1p" ng-model="ratings3B">
+                    <label for="1p">1<br/><br/>Dislike<br/>very much<br/>&nbsp;</label> 
+                    <input type="radio" name="like" value="2" id="2p" ng-model="ratings3B">
+                    <label for="2p">2<br/><br/>Dislike<br/>&nbsp;<br/>&nbsp;<br/>&nbsp;</label>
+                    <input type="radio" name="like" value="3" id="3p" ng-model="ratings3B">
+                    <label for="3p">3<br/><br/>Somewhat<br/>dislike<br/>&nbsp;<br/>&nbsp;</label> 
+                    <input type="radio" name="like" value="4" id="4p" ng-model="ratings3B">
+                    <label for="4p">4<br/><br/>Neither like<br/> nor dislike</label> 
+                    <input type="radio" name="like" value="5" id="5p" ng-model="ratings3B">
+                    <label for="5p">5 <br/><br/>Somewhat<br/>like<br/>&nbsp;<br/>&nbsp;</label> 
+                    <input type="radio" name="like" value="6" id="6p" ng-model="ratings3B">
+                    <label for="6p">6<br/><br/>Like<br/>&nbsp;<br/>&nbsp;<br/>&nbsp;</label> 
+                    <input type="radio" name="like" value="7" id="7p" ng-model="ratings3B">
+                    <label for="7p">7<br/><br/>Like<br/>very much<br/>&nbsp;</label> 
+            </span>
             </form>
-            <form action="">
-                <label class="statement">On a scale of 1-7 (<em>1 = very uncreative, 7 = very creative</em>), how creative do you think 
-                    this excerpt is?</label>
-                    <ul class='likert'>
-                        <li>
-                            <input type="radio" name="likert" value="1" ng-model="ratings3C">
-                            <label>1 Very uncreative</label>
-                            {{ratings1C}}
-                        </li>
-                        <li>
-                            <input type="radio" name="likert" value="2" ng-model="ratings3C">
-                            <label>2 Uncreative</label>
-                        </li>
-                        <li>
-                            <input type="radio" name="likert" value="3" ng-model="ratings3C">
-                            <label>3 Somewhat uncreative</label>
-                        </li>
-                        <li>
-                            <input type="radio" name="likert" value="4" ng-model="ratings3C">
-                            <label>4 Neither creative nor uncreative</label>
-                        </li>
-                        <li>
-                            <input type="radio" name="likert" value="5" ng-model="ratings3C">
-                            <label>5 Somewhat creative</label>
-                        </li>
-                        <li>
-                            <input type="radio" name="likert" value="6" ng-model="ratings3C">
-                            <label>6 Creative</label>
-                        </li>
-                        <li>
-                            <input type="radio" name="likert" value="7" ng-model="ratings3C">
-                            <label>7 Very creative</label>
-                        </li>
-                    </ul>
-            </form>
-            <form action="">
-                <label class="statement">On a scale of 1-7 (<em>1 = not moving at all, 7 = very moving</em>), how moving was  
-                    this excerpt?</label>
-                    <ul class='likert'>
-                        <li>
-                            <input type="radio" name="likert" value="1" ng-model="ratings3D">
-                            <label>1 Not moving at all</label>
-                            {{ratings1D}}
-                        </li>
-                        <li>
-                            <input type="radio" name="likert" value="2" ng-model="ratings3D">
-                            <label>2</label>
-                        </li>
-                        <li>
-                            <input type="radio" name="likert" value="3" ng-model="ratings3D">
-                            <label>3</label>
-                        </li>
-                        <li>
-                            <input type="radio" name="likert" value="4" ng-model="ratings3D">
-                            <label>4 Somewhat moving</label>
-                        </li>
-                        <li>
-                            <input type="radio" name="likert" value="5" ng-model="ratings3D">
-                            <label>5</label>
-                        </li>
-                        <li>
-                            <input type="radio" name="likert" value="6" ng-model="ratings3D">
-                            <label>6</label>
-                        </li>
-                        <li>
-                            <input type="radio" name="likert" value="7" ng-model="ratings3D">
-                            <label>7 Very moving</label>
-                        </li>
-                    </ul>
-            </form>
-            <form action="">
-                <label class="statement">On a scale of 1-7 (<em>1 = very poorly written, 7 = very well-written</em>), how well-written was  
-                    is this excerpt?</label>
-                    <ul class='likert'>
-                        <li>
-                            <input type="radio" name="likert" value="1" ng-model="ratings3E">
-                            <label>1 very poorly written</label>
-                            {{ratings1E}}
-                        </li>
-                        <li>
-                            <input type="radio" name="likert" value="2" ng-model="ratings3E">
-                            <label>2 poorly written</label>
-                        </li>
-                        <li>
-                            <input type="radio" name="likert" value="3" ng-model="ratings3E">
-                            <label>3 somewhat poorly written</label>
-                        </li>
-                        <li>
-                            <input type="radio" name="likert" value="4" ng-model="ratings3E">
-                            <label>4 neither poorly written nor well-written</label>
-                        </li>
-                        <li>
-                            <input type="radio" name="likert" value="5" ng-model="ratings3E">
-                            <label>5 somewhat well-written</label>
-                        </li>
-                        <li>
-                            <input type="radio" name="likert" value="6" ng-model="ratings3E">
-                            <label>6 well-written</label>
-                        </li>
-                        <li>
-                            <input type="radio" name="likert" value="7" ng-model="ratings3E">
-                            <label>7 very well-written</label>
-                        </li>
-                    </ul>
-            </form>
-            <form action="">
-                <label class="statement">On a scale of 1-7 (<em>1 = very shallow, 7 = very profound</em>), how profound 
-                    is this excerpt?</label>
-                    <ul class='likert'>
-                        <li>
-                            <input type="radio" name="likert" value="1" ng-model="ratings3F">
-                            <label>1 Very shallow</label>
-                            {{ratings1F}}
-                        </li>
-                        <li>
-                            <input type="radio" name="likert" value="2" ng-model="ratings3F">
-                            <label>2 Shallow</label>
-                        </li>
-                        <li>
-                            <input type="radio" name="likert" value="3" ng-model="ratings3F">
-                            <label>3 Somewhat shallow</label>
-                        </li>
-                        <li>
-                            <input type="radio" name="likert" value="4" ng-model="ratings3F">
-                            <label>4 Neither shallow nor profound</label>
-                        </li>
-                        <li>
-                            <input type="radio" name="likert" value="5" ng-model="ratings3F">
-                            <label>5 Somewhat profound</label>
-                        </li>
-                        <li>
-                            <input type="radio" name="likert" value="6" ng-model="ratings3F">
-                            <label>6 Profound</label>
-                        </li>
-                        <li>
-                            <input type="radio" name="likert" value="7" ng-model="ratings3F">
-                            <label>7 Very profound</label>
-                        </li>
-                    </ul>
-            </form>
-            <form action="">
-                <label class="statement">On a scale of 1-7 (<em>1 = not at all recommend, 7 = very much recommend</em>), how much would you 
-                    recommend the author of this excerpt to a friend?</label>
-                    <ul class='likert'>
-                        <li>
-                            <input type="radio" name="likert" value="1" ng-model="ratings3G">
-                            <label>1 Not at all recommend</label>
-                            {{ratings1G}}
-                        </li>
-                        <li>
-                            <input type="radio" name="likert" value="2" ng-model="ratings3G">
-                            <label>2</label>
-                        </li>
-                        <li>
-                            <input type="radio" name="likert" value="3" ng-model="ratings3G">
-                            <label>3</label>
-                        </li>
-                        <li>
-                            <input type="radio" name="likert" value="4" ng-model="ratings3G">
-                            <label>4 Somewhat recommend</label>
-                        </li>
-                        <li>
-                            <input type="radio" name="likert" value="5" ng-model="ratings3G">
-                            <label>5</label>
-                        </li>
-                        <li>
-                            <input type="radio" name="likert" value="6" ng-model="ratings3G">
-                            <label>6</label>
-                        </li>
-                        <li>
-                            <input type="radio" name="likert" value="7" ng-model="ratings3G">
-                            <label>7 Very much recommend</label>
-                        </li>
-                    </ul>
-            </form>
-        </div>
-    </li>
-</ul>
 
+            <p>On a scale of 1-7 (<em>1 = very uncreative, 7 = very creative</em>), how creative do you think 
+            this excerpt is?</p>
+            <form action="">
+            <span class="segmented">
+                    <input type="radio" name="creative" value="1" id="1q" ng-model="ratings3C">
+                    <label for="1q">1<br/><br/>Very<br/>uncreative<br/>&nbsp;<br/>&nbsp;</label> 
+                    <input type="radio" name="creative" value="2" id="2q" ng-model="ratings3C">
+                    <label for="2q">2<br/><br/>Uncreative<br/>&nbsp;<br/>&nbsp;<br/>&nbsp;</label>
+                    <input type="radio" name="creative" value="3" id="3q" ng-model="ratings3C">
+                    <label for="3q">3<br/><br/>Somewhat<br/>uncreative<br/>&nbsp;<br/>&nbsp;</label> 
+                    <input type="radio" name="creative" value="4" id="4q" ng-model="ratings3C">
+                    <label for="4q">4<br/><br/>Neither creative<br/> nor uncreative</label> 
+                    <input type="radio" name="creative" value="5" id="5q" ng-model="ratings3C">
+                    <label for="5q">5 <br/><br/>Somewhat<br/>creative<br/>&nbsp;<br/>&nbsp;</label> 
+                    <input type="radio" name="creative" value="6" id="6q" ng-model="ratings3C">
+                    <label for="6q">6<br/><br/>Creative<br/>&nbsp;<br/>&nbsp;<br/>&nbsp;</label> 
+                    <input type="radio" name="creative" value="7" id="7q" ng-model="ratings3C">
+                    <label for="7q">7<br/><br/>Very<br/>creative<br/>&nbsp;<br/>&nbsp;</label> 
+            </span>
+            </form>
+            
+            <p>On a scale of 1-7 (<em>1 = not moving at all, 7 = very moving</em>), how moving was  
+            this excerpt?</p>
+            <form action="">
+            <span class="segmented">
+                    <input type="radio" name="moving" value="1" id="1r" ng-model="ratings3D">
+                    <label for="1r">1<br/><br/>Not moving<br/>at all</label> 
+                    <input type="radio" name="moving" value="2" id="2r" ng-model="ratings3D">
+                    <label for="2r">2<br/>&nbsp;<br/>&nbsp;<br/>&nbsp;<br/>&nbsp;</label>
+                    <input type="radio" name="moving" value="3" id="3r" ng-model="ratings3D">
+                    <label for="3r">3<br/>&nbsp;<br/>&nbsp;<br/>&nbsp;<br/>&nbsp;</label> 
+                    <input type="radio" name="moving" value="4" id="4r" ng-model="ratings3D">
+                    <label for="4r">4<br/><br/>Somewhat moving<br/>&nbsp;</label> 
+                    <input type="radio" name="moving" value="5" id="5r" ng-model="ratings3D">
+                    <label for="5r">5 <br/>&nbsp;<br/>&nbsp;<br/>&nbsp;<br/>&nbsp;</label> 
+                    <input type="radio" name="moving" value="6" id="6r" ng-model="ratings3D">
+                    <label for="6r">6<br/>&nbsp;<br/>&nbsp;<br/>&nbsp;<br/>&nbsp;</label> 
+                    <input type="radio" name="moving" value="7" id="7r" ng-model="ratings2D">
+                    <label for="7r">7<br/><br/>Not moving<br/>at all</label> 
+            </span>
+            </form>
+
+            <p>On a scale of 1-7 (<em>1 = very poorly written, 7 = very well-written</em>), how well-written was  
+                    is this excerpt?</p>
+            <form action="">
+            <span class="segmented">
+                    <input type="radio" name="like" value="1" id="1s" ng-model="ratings3E">
+                    <label for="1s">1<br/><br/>Very<br/>poorly written<br/>&nbsp;<br/>&nbsp;</label> 
+                    <input type="radio" name="like" value="2" id="2s" ng-model="ratings3E">
+                    <label for="2s">2<br/><br/>Poorly written<br/>&nbsp;<br/>&nbsp;<br/>&nbsp;</label>
+                    <input type="radio" name="like" value="3" id="3s" ng-model="ratings3E">
+                    <label for="3s">3<br/><br/>Somewhat<br/>poorly written<br/>&nbsp;<br/>&nbsp;</label> 
+                    <input type="radio" name="like" value="4" id="4s" ng-model="ratings3E">
+                    <label for="4s">4<br/><br/>Neither poorly written<br/> nor well-written</label> 
+                    <input type="radio" name="like" value="5" id="5s" ng-model="ratings3E">
+                    <label for="5s">5 <br/><br/>Somewhat<br/>well-writen<br/>&nbsp;<br/>&nbsp;</label> 
+                    <input type="radio" name="like" value="6" id="6s" ng-model="ratings3E">
+                    <label for="6s">6<br/><br/>Well-written<br/>&nbsp;<br/>&nbsp;<br/>&nbsp;</label> 
+                    <input type="radio" name="like" value="7" id="7s" ng-model="ratings3E">
+                    <label for="7s">7<br/><br/>Very<br/>well-written<br/>&nbsp;<br/>&nbsp;</label> 
+            </span>
+            </form>
+
+            <p>On a scale of 1-7 (<em>1 = very shallow, 7 = very profound</em>), how profound 
+                    is this excerpt?</p>
+            <form action="">
+            <span class="segmented">
+                    <input type="radio" name="like" value="1" id="1t" ng-model="ratings3F">
+                    <label for="1t">1<br/><br/>Very<br/>shallow<br/>&nbsp;<br/>&nbsp;</label> 
+                    <input type="radio" name="like" value="2" id="2t" ng-model="ratings3F">
+                    <label for="2t">2<br/><br/>Shallow<br/>&nbsp;<br/>&nbsp;<br/>&nbsp;</label>
+                    <input type="radio" name="like" value="3" id="3t" ng-model="ratings3F">
+                    <label for="3t">3<br/><br/>Somewhat<br/>shallow<br/>&nbsp;<br/>&nbsp;</label> 
+                    <input type="radio" name="like" value="4" id="4t" ng-model="ratings3F">
+                    <label for="4t">4<br/><br/>Neither shallow<br/> nor profound</label> 
+                    <input type="radio" name="like" value="5" id="5t" ng-model="ratings3F">
+                    <label for="5t">5 <br/><br/>Somewhat<br/>profound<br/>&nbsp;<br/>&nbsp;</label> 
+                    <input type="radio" name="like" value="6" id="6t" ng-model="ratings3F">
+                    <label for="6t">6<br/><br/>Profound<br/>&nbsp;<br/>&nbsp;<br/>&nbsp;</label> 
+                    <input type="radio" name="like" value="7" id="7t" ng-model="ratings3F">
+                    <label for="7t">7<br/><br/>Very<br/>profound<br/>&nbsp;<br/>&nbsp;</label> 
+            </span>
+            </form>
+
+            <p>On a scale of 1-7 (<em>1 = not at all recommend, 7 = very much recommend</em>), how much would you 
+            <br/>recommend the author of this excerpt to a friend?</p>
+            <form action="">
+            <span class="segmented">
+                    <input type="radio" name="like" value="1" id="1u" ng-model="ratings3G">
+                    <label for="1u">1<br/><br/>Not at<br/>all recommend</label> 
+                    <input type="radio" name="like" value="2" id="2u" ng-model="ratings3G">
+                    <label for="2u">2<br/><br/>&nbsp;<br/>&nbsp;<br/>&nbsp;</label>
+                    <input type="radio" name="like" value="3" id="3u" ng-model="ratings3G">
+                    <label for="3u">3<br/><br/>&nbsp;<br/>&nbsp;<br/>&nbsp;</label> 
+                    <input type="radio" name="like" value="4" id="4u" ng-model="ratings3G">
+                    <label for="4u">4<br/><br/>Somewhat recommend<br/>&nbsp;</label> 
+                    <input type="radio" name="like" value="5" id="5u" ng-model="ratings3G">
+                    <label for="5u">5 <br/><br/>&nbsp;<br/>&nbsp;<br/>&nbsp;</label> 
+                    <input type="radio" name="like" value="6" id="6u" ng-model="ratings3G">
+                    <label for="6u">6<br/><br/>&nbsp;<br/>&nbsp;<br/>&nbsp;</label> 
+                    <input type="radio" name="like" value="7" id="7u" ng-model="ratings3G">
+                    <label for="7u">7<br/><br/>Very much recommend</label> 
+            </span>
+            </form>
+        </div> <!--wrap-->

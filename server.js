@@ -14,7 +14,7 @@ var methodOverride = require('method-override');
 
 // CONFIGURATION
 //============================================================
-mongoose.connect(db.url);
+mongoose.connect(db.mlab_url || db.url);
 
 app.use(bodyParser.json()); 
 app.use(bodyParser.json({ type: 'application/vnd.api+json' }));

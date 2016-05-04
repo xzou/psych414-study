@@ -11,12 +11,12 @@ module.exports = function(app) {
 
     // Test route
     router.get('/', function(req, res) {
-        res.json({ message: 'shit be working'});
+        res.json({ message: 'stuff be working'});
     });
 
     // Middleware to use for all requests
     router.use(function(req, res, next) {
-        console.log('shit is happening');
+        console.log('stuff is happening');
         next();
     });
 
