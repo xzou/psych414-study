@@ -28,8 +28,12 @@ p {
     padding-top: 25%;
 }
 
+.intro h1 {
+    padding-left: 285px;
+}
+
 #intro-info {
-    padding-left: 16px;
+    padding-left: 300px;
 }
 
 #intro-info p {
