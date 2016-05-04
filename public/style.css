@@ -111,7 +111,7 @@ textarea:focus, input:focus {
 /*==============STUDIES=============*/
 .study {
     padding: 60px 0;
-    width: 900px;
+    width: 1000px;
     margin-left: -80px;
     padding-left: 20%;
 }
@@ -162,7 +162,7 @@ textarea:focus, input:focus {
     height: 90px;
     width: 70px;
     text-align: center;
-    padding: 15px 25px;
+    padding: 15px 15px;
     line-height: 120%;
     color: #606060;
     font-family: 'Roboto', sans-serif;
