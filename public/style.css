@@ -123,6 +123,15 @@ textarea:focus, input:focus {
     background-color: #404040;
 }
 
+#consent-form label {
+    font-family: 'Crimson Text', serif;
+    font-size: 18px;
+    line-height: 180%;
+    margin-bottom: 20px;
+    color: #404040;
+}
+
+
 /*==============STUDY=============*/
 .study {
     padding: 60px 0;
