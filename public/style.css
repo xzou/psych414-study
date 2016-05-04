@@ -208,7 +208,7 @@ textarea:focus, input:focus {
 }
 
 .question {
-    padding-bottom: 45px;
+    padding-bottom: 30px;
 }
 
 #comment {
@@ -216,7 +216,6 @@ textarea:focus, input:focus {
     height: 200px;
     padding: 10px;
     resize: none;
-    padding-bottom: 20px;
     margin-bottom: 20px;
 }
 
@@ -225,7 +224,7 @@ textarea:focus, input:focus {
 }
 
 .debrief h3 {
-    margin-bottom: -15px;
+    margin-bottom: -8px;
 }
 
 
