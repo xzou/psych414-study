@@ -17,9 +17,8 @@ var methodOverride = require('method-override');
 //mongoose.connect(db.mlab_url || db.url);
 //mongoose.connect(db.url);
 //mongoose.connect(db.mlab_url);
-//mongoose.connect(db.mlab_url);
 
-mongoose.connect('mongodb://heroku_wj78jsv6:f255nrb9bkuv06jr5s1de080rf@ds013162.mlab.com:13162/heroku_wj78jsv6');
+mongoose.connect('mongodb://xzou:h@ll00@ds013162.mlab.com:13162/heroku_wj78jsv6');
 
 app.use(bodyParser.json()); 
 app.use(bodyParser.json({ type: 'application/vnd.api+json' }));
