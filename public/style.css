@@ -224,9 +224,12 @@ textarea:focus, input:focus {
 }
 
 .debrief h3 {
-    margin-bottom: -8px;
+    margin-bottom: -4px;
 }
 
+#debrief-text {
+    margin-bottom: -10px;
+}
 
 
 
